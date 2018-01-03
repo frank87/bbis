@@ -1,0 +1,8 @@
+<HEAD>
+<title>{% block title %}Zomaar een pagina{% endblock %}</title>
+</HEAD>
+<BODY>
+{% block body %}
+Please replace...
+{% endblock %}
+</body>

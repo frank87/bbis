@@ -1,0 +1,17 @@
+{% extends "main.dtl" %}
+{% block body %}
+<table>
+{{applist}}
+{% for app in applist %}
+	<tr>
+	<td><a href ="{{ o.url }}">{{ o.name }}</a></td>
+	<td>{{ o.description }} </td>
+	</tr>
+{% empty %}
+	<tr>
+	<td>Geen actieve aplicaties</td>
+	</tr>
+{% endfor %}
+</table>
+{% endblock %}
+
